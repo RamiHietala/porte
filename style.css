@@ -16,6 +16,9 @@ body {
     margin: 7vw 0;
     width: 100%;
 }
+.row:last-child {
+    margin-bottom: 0;
+}
 
 .twoequal-container {
     display: flex;
@@ -58,6 +61,10 @@ a {
     border-bottom: 2px solid #000;
     text-transform: uppercase;
     font-weight: 600;
+}
+.button.valk {
+    color: #fff;
+    border-color: #fff;
 }
 
 /* header säännöt
@@ -141,8 +148,11 @@ box-shadow: inset 0px 0px 50px 1000px rgba(0,0,0,0.2);
     justify-content: space-evenly;
     column-gap: 1em;
 }
-.title-lift {
-    
+.jacket h2 {
+    margin-left: -164px;
+}
+.collection h2 {
+    margin-left: 240px;
 }
 
 .jacket {
@@ -163,4 +173,28 @@ box-shadow: inset 0px 0px 50px 1000px rgba(0,0,0,0.2);
 .hollow-text {
     -webkit-text-stroke: 2px black;
     color: rgba(0, 0, 0, 0);
+}
+
+/* Footteri säännöt */
+.footer {
+    background: #000;
+    width: 100%;
+    color: #fff;
+    padding: 5vw 0;
+}
+.footer h4 {
+    margin-bottom: 20px;
+
+}
+
+.footer ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+.footer a {
+    color: #fff;
+}
+.bottom-footer {
+    width: 90%;
+    margin:auto;
 }
