@@ -82,7 +82,7 @@ a {
 .bottom-header{
     width: 100%;
 }
-.bottom-header a{
+.bottom-header a {
     color: #000;
 }
 .bottom-header-container {
@@ -99,15 +99,84 @@ a {
 }
 
 .shop ul {
+    width: 100%;
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
+    gap: 20px;
 }
-.shop ul li a {
-    padding: .4em;
+.shop ul li a svg {
+    max-width: 25px;
+    max-height: 25px;
+    height: auto;
+    width: 100%;
+    color: #fff;
 }
+
+
+.navigation {
+    text-align: center;
+}
+
+.navigation a img {
+   width: 2em;
+}
+
+.modalMenu.inactive {
+    display: none;
+}
+.modalMenu.active {
+    display: block;
+}
+
+.modalMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+ }
+.menu {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: 300px;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+.menu ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.menu ul li {
+    margin-bottom: 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    margin: 20px;
+}
+.closeBtn svg {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+    fill: #fff;
+}
+.closeBtn {
+    cursor: pointer;
+}
+
 
 /* content säännöt */
 
@@ -196,5 +265,30 @@ box-shadow: inset 0px 0px 50px 1000px rgba(0,0,0,0.2);
 }
 .bottom-footer {
     width: 90%;
-    margin:auto;
+    margin: 2em auto 0;
+    max-width: 900px;
+}
+.bottom-footer .column {
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+}
+
+.bottom-footer .some-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em 0;
+    
+}
+.bottom-footer .some-icons li {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.bottom-footer .some-icons svg {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
 }
